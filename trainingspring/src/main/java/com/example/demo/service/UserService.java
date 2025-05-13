@@ -18,7 +18,7 @@ public class UserService {
      * ユーザー情報 Repository
      */
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     public List<User> searchAll() {
         // ユーザーTBLの内容を全検索
