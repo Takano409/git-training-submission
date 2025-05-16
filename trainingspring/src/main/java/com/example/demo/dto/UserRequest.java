@@ -24,7 +24,7 @@ public class UserRequest implements Serializable{
 	/**
 	 * 住所
 	 */
-	@Size(max = 255, message = "住所はア255桁居ないで入力してください")
+	@Size(max = 255, message = "住所は255桁居ないで入力してください")
 	private String address;
 	
 	/*
