@@ -6,18 +6,17 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
-
-import org.springframework.data.annotation.Id;
 
 import lombok.Data;
 
 
 
 @Entity
-@Table(name = "varification_tokens")
+@Table(name = "verification_tokens")
 @Data
 public class VerificationToken {
 	@Id
@@ -27,6 +26,8 @@ public class VerificationToken {
 	
 	@OneToOne
 	@JoinColumn(name = "user_id")
+	private User user;
+	
 	@Column(name = "token")
 	private String token;
 	

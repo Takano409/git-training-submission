@@ -20,7 +20,7 @@ public class SignupForm {
 	private String phoneNumber;
 	@NotBlank(message = "メールアドレスを入力してください")
 	private String email;
-	@Length(min = 8, message = "パスワードは8文字以上で入力してください")
+	@Length(min = 0, message = "パスワードは8文字以上で入力してください")
 	private String password;
 	@NotBlank(message = "パスワード（確認用）を入力してください")
 	private String passwordConfirmation;
