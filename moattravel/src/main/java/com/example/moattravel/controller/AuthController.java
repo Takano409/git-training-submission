@@ -48,6 +48,7 @@ public class AuthController{
 		if (userService.isEmailRegistered(signupForm.getEmail())) {
 //			FieldError fieldError = new FieldError(bindingResult.getObjectName(), "email", "すでに登録済みのメールアドレスです。");
 //			bindingResult.addError(fieldError);
+//			
 		}
 		if (!userService.isSamePassword(signupForm.getPassword(), signupForm.getPasswordConfirmation())) {
 			FieldError fieldError = new FieldError(bindingResult.getObjectName(),"password", "パスワードが一致しません");
